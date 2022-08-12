@@ -1,0 +1,41 @@
+﻿pyhamilton.liquid\_handling.backends.simulation.SimulationBackend
+=================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.simulation
+
+.. autoclass:: SimulationBackend
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.__init__
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.adjust_well_volume
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.aspirate
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.aspirate96
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.assigned_resource_callback
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.clear_tips
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.discard_tips
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.discard_tips96
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.dispense
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.dispense96
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.fill_tips
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.move_lid
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.move_plate
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.pickup_tips
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.pickup_tips96
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.place_tips
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.remove_tips
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.send_event
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.setup
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.stop
+      ~pyhamilton.liquid_handling.backends.simulation.SimulationBackend.unassigned_resource_callback
+   
+   

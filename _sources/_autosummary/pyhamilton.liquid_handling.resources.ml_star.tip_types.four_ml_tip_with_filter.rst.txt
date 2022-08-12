@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.ml\_star.tip\_types.four\_ml\_tip\_with\_filter
+=====================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.ml_star.tip_types
+
+.. autodata:: four_ml_tip_with_filter

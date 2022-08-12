@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.TipCarrier.serialize
+===================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: TipCarrier.serialize

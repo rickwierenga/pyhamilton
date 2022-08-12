@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Plate.assign\_child\_resource
+============================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Plate.assign_child_resource

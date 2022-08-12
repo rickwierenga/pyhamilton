@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.PlateReader.assign\_child\_resource
+=========================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. automethod:: PlateReader.assign_child_resource

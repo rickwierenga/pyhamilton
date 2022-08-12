@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Tips.resource\_assigned\_callback
+================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Tips.resource_assigned_callback

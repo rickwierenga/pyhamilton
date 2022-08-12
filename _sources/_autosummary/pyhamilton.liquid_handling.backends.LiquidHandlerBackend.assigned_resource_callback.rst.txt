@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.LiquidHandlerBackend.assigned\_resource\_callback
+======================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends
+
+.. automethod:: LiquidHandlerBackend.assigned_resource_callback

@@ -1,0 +1,151 @@
+﻿pyhamilton.liquid\_handling.backends.hamilton.STAR
+==================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.hamilton
+
+.. autoclass:: STAR
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.__init__
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.additional_time_stamp
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.aspirate
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.aspirate96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.aspirate_core_96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.aspirate_pip
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.assigned_resource_callback
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.close_gripper
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.collapse_gripper_arm
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.configure_node_names
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.define_tip_needle
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.define_tip_type
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.discard_tip
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.discard_tips
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.discard_tips96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.discard_tips_core96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.dispense
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.dispense96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.dispense_core_96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.dispense_pip
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.drain_dual_chamber_system
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.fill_selected_dual_chamber
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.get_logic_iswap_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.get_or_assign_tip_type_index
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.get_plate
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.get_tip_type_table_index
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.halt
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.initialize_auto_load
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.initialize_core_96_head
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.initialize_dual_pump_station_valves
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.initialize_iswap
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.initialize_pipetting_channels
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_all_channels_in_z_safety
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_all_pipetting_channels_to_defined_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_auto_load_to_z_save_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_core_96_head_to_defined_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_core_96_to_safe_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_iswap_x_direction
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_iswap_y_direction
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_iswap_z_direction
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_left_x_arm_to_position_with_all_attached_components_in_z_safety_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_lid
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_plate
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_plate_to_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.move_right_x_arm_to_position_with_all_attached_components_in_z_safety_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.occupy_and_provide_area_for_external_access
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.open_gripper
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.open_not_initialized_gripper
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.park_iswap
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.parse_fw_string
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.parse_response
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.pick_up_tip
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.pick_up_tips_core96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.pickup_tips
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.pickup_tips96
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.position_components_for_free_iswap_y_range
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.position_left_x_arm_
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.position_max_free_y_for_n
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.position_right_x_arm_
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.position_single_pipetting_channel_in_y_direction
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.position_single_pipetting_channel_in_z_direction
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.pre_initialize_instrument
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.prepare_iswap_teaching
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.put_plate
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.release_all_occupied_areas
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.release_occupied_area
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_additional_timestamp_data
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_auto_load_slot_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_core_96_head_channel_tadm_error_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_core_96_head_channel_tadm_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_deck_data
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_download_date
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_eeprom_data_correctness
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_electronic_board_type
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_error_code
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_extended_configuration
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_firmware_version
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_installation_data
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_instrument_initialization_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_iswap_in_parking_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_iswap_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_left_x_arm_last_collision_type
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_left_x_arm_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_machine_configuration
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_master_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_maximal_ranges_of_x_drives
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_name_of_last_faulty_parameter
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_node_names
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_number_of_presence_sensors_installed
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_parameter_value
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_pip_channel_validation_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_pip_height_last_lld
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_plate_in_iswap
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_position_of_core_96_head
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_present_wrap_size_of_installed_arms
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_pump_settings
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_right_x_arm_last_collision_type
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_right_x_arm_position
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_single_carrier_presence
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_supply_voltage
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_tadm_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_technical_status_of_assemblies
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_tip_presence
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_tip_presence_in_core_96_head
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_verification_data
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_xl_channel_validation_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_y_pos_channel_n
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.request_z_pos_channel_n
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.save_all_cycle_counters
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.save_download_date
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.save_pip_channel_validation_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.save_technical_status_of_assemblies
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.save_xl_channel_validation_status
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.send_command
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_barcode_type
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_carrier_monitoring
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_deck_data
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_instrument_configuration
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_loading_indicators
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_not_stop
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_single_step_mode
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_x_offset_x_axis_core_96_head
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_x_offset_x_axis_core_nano_pipettor_head
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.set_x_offset_x_axis_iswap
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.setup
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.spread_pip_channels
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.stop
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.store_installation_data
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.store_verification_data
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.trigger_next_step
+      ~pyhamilton.liquid_handling.backends.hamilton.STAR.unassigned_resource_callback
+   
+   

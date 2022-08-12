@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Carrier.get\_sites
+=================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Carrier.get_sites

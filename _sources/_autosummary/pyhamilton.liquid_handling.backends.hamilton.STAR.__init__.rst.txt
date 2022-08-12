@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.hamilton.STAR.\_\_init\_\_
+===============================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.hamilton.STAR
+
+.. autodata:: __init__

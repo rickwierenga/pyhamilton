@@ -1,0 +1,23 @@
+﻿pyhamilton.liquid\_handling.resources.abstract.Coordinate
+=========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. autoclass:: Coordinate
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.resources.abstract.Coordinate.__init__
+      ~pyhamilton.liquid_handling.resources.abstract.Coordinate.deserialize
+      ~pyhamilton.liquid_handling.resources.abstract.Coordinate.serialize
+   
+   

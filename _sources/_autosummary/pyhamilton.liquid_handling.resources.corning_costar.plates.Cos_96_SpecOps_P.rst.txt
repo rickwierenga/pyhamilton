@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.corning\_costar.plates.Cos\_96\_SpecOps\_P
+================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.corning_costar.plates
+
+.. autoclass:: Cos_96_SpecOps_P

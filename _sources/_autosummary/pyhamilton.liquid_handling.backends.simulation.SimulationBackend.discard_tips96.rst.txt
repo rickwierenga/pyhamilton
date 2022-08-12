@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.simulation.SimulationBackend.discard\_tips96
+=================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.simulation
+
+.. automethod:: SimulationBackend.discard_tips96

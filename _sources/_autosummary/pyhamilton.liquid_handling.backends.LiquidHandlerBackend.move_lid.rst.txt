@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.LiquidHandlerBackend.move\_lid
+===================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends
+
+.. automethod:: LiquidHandlerBackend.move_lid

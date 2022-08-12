@@ -1,0 +1,35 @@
+﻿pyhamilton.liquid\_handling.resources.Hotel
+===========================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. autoclass:: Hotel
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.resources.Hotel.__init__
+      ~pyhamilton.liquid_handling.resources.Hotel.assign_child_resource
+      ~pyhamilton.liquid_handling.resources.Hotel.get_absolute_location
+      ~pyhamilton.liquid_handling.resources.Hotel.get_all_children
+      ~pyhamilton.liquid_handling.resources.Hotel.get_height
+      ~pyhamilton.liquid_handling.resources.Hotel.get_resource
+      ~pyhamilton.liquid_handling.resources.Hotel.get_size_x
+      ~pyhamilton.liquid_handling.resources.Hotel.get_size_y
+      ~pyhamilton.liquid_handling.resources.Hotel.get_size_z
+      ~pyhamilton.liquid_handling.resources.Hotel.get_top_item
+      ~pyhamilton.liquid_handling.resources.Hotel.resource_assigned_callback
+      ~pyhamilton.liquid_handling.resources.Hotel.resource_unassigned_callback
+      ~pyhamilton.liquid_handling.resources.Hotel.serialize
+      ~pyhamilton.liquid_handling.resources.Hotel.unassign
+      ~pyhamilton.liquid_handling.resources.Hotel.unassign_child_resource
+   
+   

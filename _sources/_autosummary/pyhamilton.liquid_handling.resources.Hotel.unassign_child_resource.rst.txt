@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.Hotel.unassign\_child\_resource
+=====================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. automethod:: Hotel.unassign_child_resource

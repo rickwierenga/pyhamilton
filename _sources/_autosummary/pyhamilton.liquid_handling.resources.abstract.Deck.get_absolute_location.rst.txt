@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Deck.get\_absolute\_location
+===========================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Deck.get_absolute_location

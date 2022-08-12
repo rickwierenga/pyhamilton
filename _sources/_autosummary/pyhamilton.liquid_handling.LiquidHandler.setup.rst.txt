@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.setup
+===============================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.setup

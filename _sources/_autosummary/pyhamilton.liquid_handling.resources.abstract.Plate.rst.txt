@@ -1,0 +1,33 @@
+﻿pyhamilton.liquid\_handling.resources.abstract.Plate
+====================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. autoclass:: Plate
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.__init__
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.assign_child_resource
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.get_absolute_location
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.get_all_children
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.get_resource
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.get_size_x
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.get_size_y
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.get_size_z
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.resource_assigned_callback
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.resource_unassigned_callback
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.serialize
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.unassign
+      ~pyhamilton.liquid_handling.resources.abstract.Plate.unassign_child_resource
+   
+   

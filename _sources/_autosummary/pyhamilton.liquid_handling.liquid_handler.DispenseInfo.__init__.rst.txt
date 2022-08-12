@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.liquid\_handler.DispenseInfo.\_\_init\_\_
+=====================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.liquid_handler
+
+.. automethod:: DispenseInfo.__init__

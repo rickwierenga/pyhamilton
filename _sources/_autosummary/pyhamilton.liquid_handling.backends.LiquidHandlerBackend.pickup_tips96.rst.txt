@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.LiquidHandlerBackend.pickup\_tips96
+========================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends
+
+.. automethod:: LiquidHandlerBackend.pickup_tips96

@@ -1,0 +1,6 @@
+pyhamilton.utils.string.pad\_string
+===================================
+
+.. currentmodule:: pyhamilton.utils.string
+
+.. autofunction:: pad_string

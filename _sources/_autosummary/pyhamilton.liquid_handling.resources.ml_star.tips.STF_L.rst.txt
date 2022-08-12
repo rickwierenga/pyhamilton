@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.ml\_star.tips.STF\_L
+==========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.ml_star.tips
+
+.. autoclass:: STF_L

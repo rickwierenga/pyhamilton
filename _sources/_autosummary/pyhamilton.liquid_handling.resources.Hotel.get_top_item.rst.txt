@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.Hotel.get\_top\_item
+==========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. automethod:: Hotel.get_top_item

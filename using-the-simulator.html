@@ -1,0 +1,1280 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Using the simulator &#8212; PyHamilton  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Public API: pyhamilton package" href="pyhamilton.html" />
+    <link rel="prev" title="Basic liquid handling" href="basic.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">PyHamilton  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting Started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="development.html">
+   Developer Guide
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Liquid handling
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="basic.html">
+   Basic liquid handling
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Using the simulator
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  API documentation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="pyhamilton.html">
+   Public API: pyhamilton package
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="pyhamilton.liquid_handling.html">
+     pyhamilton.liquid_handling package
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.html">
+       pyhamilton.liquid_handling.LiquidHandler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.__init__.html">
+         pyhamilton.liquid_handling.LiquidHandler.__init__
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.aspirate.html">
+         pyhamilton.liquid_handling.LiquidHandler.aspirate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.aspirate96.html">
+         pyhamilton.liquid_handling.LiquidHandler.aspirate96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.assign_resource.html">
+         pyhamilton.liquid_handling.LiquidHandler.assign_resource
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.discard_tips.html">
+         pyhamilton.liquid_handling.LiquidHandler.discard_tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.discard_tips96.html">
+         pyhamilton.liquid_handling.LiquidHandler.discard_tips96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.dispense.html">
+         pyhamilton.liquid_handling.LiquidHandler.dispense
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.dispense96.html">
+         pyhamilton.liquid_handling.LiquidHandler.dispense96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.get_resource.html">
+         pyhamilton.liquid_handling.LiquidHandler.get_resource
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.load.html">
+         pyhamilton.liquid_handling.LiquidHandler.load
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.load_from_json.html">
+         pyhamilton.liquid_handling.LiquidHandler.load_from_json
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.load_from_lay_file.html">
+         pyhamilton.liquid_handling.LiquidHandler.load_from_lay_file
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.move_lid.html">
+         pyhamilton.liquid_handling.LiquidHandler.move_lid
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.move_plate.html">
+         pyhamilton.liquid_handling.LiquidHandler.move_plate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.need_setup_finished.html">
+         pyhamilton.liquid_handling.LiquidHandler.need_setup_finished
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.pickup_tips.html">
+         pyhamilton.liquid_handling.LiquidHandler.pickup_tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.pickup_tips96.html">
+         pyhamilton.liquid_handling.LiquidHandler.pickup_tips96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.resource_assigned_callback.html">
+         pyhamilton.liquid_handling.LiquidHandler.resource_assigned_callback
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.resource_unassigned_callback.html">
+         pyhamilton.liquid_handling.LiquidHandler.resource_unassigned_callback
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.save.html">
+         pyhamilton.liquid_handling.LiquidHandler.save
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.setup.html">
+         pyhamilton.liquid_handling.LiquidHandler.setup
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.stop.html">
+         pyhamilton.liquid_handling.LiquidHandler.stop
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.summary.html">
+         pyhamilton.liquid_handling.LiquidHandler.summary
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.unassign_resource.html">
+         pyhamilton.liquid_handling.LiquidHandler.unassign_resource
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.AspirationInfo.html">
+       pyhamilton.liquid_handling.liquid_handler.AspirationInfo
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.AspirationInfo.__init__.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.__init__
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_dict.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_dict
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_tuple.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_tuple
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.AspirationInfo.get_corrected_volume.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.get_corrected_volume
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.AspirationInfo.serialize.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.serialize
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.DispenseInfo.html">
+       pyhamilton.liquid_handling.liquid_handler.DispenseInfo
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.DispenseInfo.__init__.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.__init__
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_dict.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_dict
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_tuple.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_tuple
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.DispenseInfo.get_corrected_volume.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.get_corrected_volume
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.liquid_handler.DispenseInfo.serialize.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.serialize
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.liquid_handling.backends.html">
+       pyhamilton.liquid_handling.backends package
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.LiquidHandlerBackend.html">
+         pyhamilton.liquid_handling.backends.LiquidHandlerBackend
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.hamilton.STAR.html">
+         pyhamilton.liquid_handling.backends.hamilton.STAR
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.simulation.SimulationBackend.html">
+         pyhamilton.liquid_handling.backends.simulation.SimulationBackend
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.liquid_handling.resources.html">
+       pyhamilton.liquid_handling.resources package
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.html">
+         pyhamilton.liquid_handling.resources.abstract
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Coordinate.html">
+         pyhamilton.liquid_handling.resources.abstract.Coordinate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Deck.html">
+         pyhamilton.liquid_handling.resources.abstract.Deck
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Lid.html">
+         pyhamilton.liquid_handling.resources.abstract.Lid
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Resource.html">
+         pyhamilton.liquid_handling.resources.abstract.Resource
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Tips.html">
+         pyhamilton.liquid_handling.resources.abstract.Tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.TipType.html">
+         pyhamilton.liquid_handling.resources.abstract.TipType
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Plate.html">
+         pyhamilton.liquid_handling.resources.abstract.Plate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Carrier.html">
+         pyhamilton.liquid_handling.resources.abstract.Carrier
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.TipCarrier.html">
+         pyhamilton.liquid_handling.resources.abstract.TipCarrier
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.PlateCarrier.html">
+         pyhamilton.liquid_handling.resources.abstract.PlateCarrier
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.Hotel.html">
+         pyhamilton.liquid_handling.resources.Hotel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.PlateReader.html">
+         pyhamilton.liquid_handling.resources.PlateReader
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.ml_star.html">
+         pyhamilton.liquid_handling.resources.ml_star
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.ml_star.tip_types.html">
+         pyhamilton.liquid_handling.resources.ml_star.tip_types
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.ml_star.tips.html">
+         pyhamilton.liquid_handling.resources.ml_star.tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.ml_star.tip_carriers.html">
+         pyhamilton.liquid_handling.resources.ml_star.tip_carriers
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.ml_star.plate_carriers.html">
+         pyhamilton.liquid_handling.resources.ml_star.plate_carriers
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.corning_costar.plates.html">
+         pyhamilton.liquid_handling.resources.corning_costar.plates
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="pyhamilton.liquid_handling.liquid_classes.html">
+       pyhamilton.liquid_handling.liquid_classes package
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="pyhamilton.utils.html">
+     pyhamilton.utils package
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.utils.file_parsing.html">
+       pyhamilton.utils.file_parsing
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.file_parsing.find_float.html">
+         pyhamilton.utils.file_parsing.find_float
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.file_parsing.find_int.html">
+         pyhamilton.utils.file_parsing.find_int
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.file_parsing.find_string.html">
+         pyhamilton.utils.file_parsing.find_string
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.utils.list.html">
+       pyhamilton.utils.list
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.list.assert_shape.html">
+         pyhamilton.utils.list.assert_shape
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.utils.numbers.html">
+       pyhamilton.utils.numbers
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+      <label for="toctree-checkbox-11">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.numbers.assert_clamp.html">
+         pyhamilton.utils.numbers.assert_clamp
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.utils.positions.html">
+       pyhamilton.utils.positions
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+      <label for="toctree-checkbox-12">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.positions.string_to_pattern.html">
+         pyhamilton.utils.positions.string_to_pattern
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.positions.string_to_position.html">
+         pyhamilton.utils.positions.string_to_position
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="_autosummary/pyhamilton.utils.string.html">
+       pyhamilton.utils.string
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="_autosummary/pyhamilton.utils.string.pad_string.html">
+         pyhamilton.utils.string.pad_string
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyhamilton/pyhamilton/edit/usb/docs/using-the-simulator.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/using-the-simulator.ipynb.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setting-up-a-connection-with-the-robot">
+   Setting up a connection with the robot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assigning-plates-and-tips">
+   Assigning plates and tips
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-the-deck-layout-placing-resources">
+   Build the deck layout: placing resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tips">
+     Tips
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#liquids">
+     Liquids
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#liquid-handling">
+   Liquid handling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#picking-up-tips">
+     Picking up tips
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aspirating-and-dispensing">
+     Aspirating and dispensing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aspirating-using-core-96">
+     Aspirating using CoRe 96
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shutting-down">
+   Shutting down
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Using the simulator</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setting-up-a-connection-with-the-robot">
+   Setting up a connection with the robot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assigning-plates-and-tips">
+   Assigning plates and tips
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-the-deck-layout-placing-resources">
+   Build the deck layout: placing resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tips">
+     Tips
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#liquids">
+     Liquids
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#liquid-handling">
+   Liquid handling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#picking-up-tips">
+     Picking up tips
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aspirating-and-dispensing">
+     Aspirating and dispensing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aspirating-using-core-96">
+     Aspirating using CoRe 96
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shutting-down">
+   Shutting down
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="using-the-simulator">
+<h1>Using the simulator<a class="headerlink" href="#using-the-simulator" title="Permalink to this headline">#</a></h1>
+<p>In this notebook you will learn how to use the simulator to test out methods.</p>
+<section id="setting-up-a-connection-with-the-robot">
+<h2>Setting up a connection with the robot<a class="headerlink" href="#setting-up-a-connection-with-the-robot" title="Permalink to this headline">#</a></h2>
+<p>As described in the <a class="reference internal" href="basic.html"><span class="doc std std-doc">basic liquid handling tutorial</span></a>, we will use the <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.html#pyhamilton.liquid_handling.LiquidHandler" title="pyhamilton.liquid_handling.liquid_handler.LiquidHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">LiquidHandler</span></code></a> class to control the robot. This time, however, instead of using the Hamilton <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.hamilton.STAR.html#pyhamilton.liquid_handling.backends.hamilton.STAR" title="pyhamilton.liquid_handling.backends.hamilton.STAR"><code class="xref py py-class docutils literal notranslate"><span class="pre">STAR</span></code></a> backend, we are using virtual the <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.simulation.SimulationBackend.html#pyhamilton.liquid_handling.backends.simulation.SimulationBackend" title="pyhamilton.liquid_handling.backends.simulation.simulation.SimulationBackend"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimulationBackend</span></code></a> backend. This means that liquid handling will work exactly the same, but the commands are sent to the simulator instead of a real physical robot.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyhamilton.liquid_handling</span> <span class="kn">import</span> <span class="n">LiquidHandler</span>
+<span class="kn">from</span> <span class="nn">pyhamilton.liquid_handling.backends.simulation.simulation</span> <span class="kn">import</span> <span class="n">SimulationBackend</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyhamilton.liquid_handling.resources</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">TIP_CAR_480_A00</span><span class="p">,</span>
+    <span class="n">PLT_CAR_L5AC_A00</span><span class="p">,</span>
+    <span class="n">Cos_96_DW_1mL</span><span class="p">,</span>
+    <span class="n">STF_L</span>
+<span class="p">)</span>
+
+<span class="n">sb</span> <span class="o">=</span> <span class="n">SimulationBackend</span><span class="p">()</span>
+<span class="n">lh</span> <span class="o">=</span> <span class="n">LiquidHandler</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">sb</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Calling <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.simulation.SimulationBackend.setup.html#pyhamilton.liquid_handling.backends.simulation.SimulationBackend.setup" title="pyhamilton.liquid_handling.backends.simulation.SimulationBackend.setup"><code class="xref py py-func docutils literal notranslate"><span class="pre">setup()</span></code></a> will set up the simulation server and open it in a new browser tab.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:websockets.server:server listening on 127.0.0.1:2121
+INFO:pyhamilton.liquid_handling.backends.simulation.simulation:Simulation server started at http://127.0.0.1:2121
+INFO:pyhamilton.liquid_handling.backends.simulation.simulation:File server started at http://127.0.0.1:1337
+</pre></div>
+</div>
+</div>
+</div>
+<p>For the optimal experience, we recommend that you run the notebook and simulator side by side.</p>
+<p><img alt="The empty simulator" src="_images/empty.png" /></p>
+</section>
+<section id="assigning-plates-and-tips">
+<h2>Assigning plates and tips<a class="headerlink" href="#assigning-plates-and-tips" title="Permalink to this headline">#</a></h2>
+<p>With the simulator, <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.assign_resource.html#pyhamilton.liquid_handling.LiquidHandler.assign_resource" title="pyhamilton.liquid_handling.LiquidHandler.assign_resource"><code class="xref py py-func docutils literal notranslate"><span class="pre">~assigning</span> <span class="pre">resources</span></code></a> has the additional affect of placing the resources on the simulated deck. They will appear immediately.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span> <span class="o">=</span> <span class="n">TIP_CAR_480_A00</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;tip carrier&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="n">tip_car</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">STF_L</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;tip_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">assign_resource</span><span class="p">(</span><span class="n">tip_car</span><span class="p">,</span> <span class="n">rails</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>When you set or delete subresources in a <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.resources.abstract.Carrier.html#pyhamilton.liquid_handling.resources.abstract.Carrier" title="pyhamilton.liquid_handling.resources.abstract.Carrier"><code class="xref py py-class docutils literal notranslate"><span class="pre">Carrier</span></code></a>, that will immediately be reflected in the UI.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">STF_L</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;tip_</span><span class="si">{</span><span class="mi">2</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">STF_L</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;tip_</span><span class="si">{</span><span class="mi">3</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">tip_car</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">STF_L</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;tip</span><span class="si">{</span><span class="mi">4</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">STF_L</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;tip_</span><span class="si">{</span><span class="mi">3</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tip_car</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">STF_L</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;tip_</span><span class="si">{</span><span class="mi">4</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt_car</span> <span class="o">=</span> <span class="n">PLT_CAR_L5AC_A00</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;pre&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">plt_car</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">Cos_96_DW_1mL</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;plate_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">assign_resource</span><span class="p">(</span><span class="n">plt_car</span><span class="p">,</span> <span class="n">rails</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><img alt="The simulator after the resources have been assigned" src="_images/assignment.png" /></p>
+</section>
+<section id="build-the-deck-layout-placing-resources">
+<h2>Build the deck layout: placing resources<a class="headerlink" href="#build-the-deck-layout-placing-resources" title="Permalink to this headline">#</a></h2>
+<p>Where you would manually place the resources like tips and liquid on the deck when using a physical system, with the Simulator you can add them using code.</p>
+<section id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h3>
+<p>Let’s <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.simulation.SimulationBackend.fill_tips.html#pyhamilton.liquid_handling.backends.simulation.SimulationBackend.fill_tips" title="pyhamilton.liquid_handling.backends.simulation.SimulationBackend.fill_tips"><code class="xref py py-func docutils literal notranslate"><span class="pre">fill_tips()</span></code></a> the tip containers at locations <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">fill_tips</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">fill_tips</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>When you no longer need tips, use <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.simulation.SimulationBackend.remove_tips.html#pyhamilton.liquid_handling.backends.simulation.SimulationBackend.remove_tips" title="pyhamilton.liquid_handling.backends.simulation.SimulationBackend.remove_tips"><code class="xref py py-func docutils literal notranslate"><span class="pre">remove_tips()</span></code></a> to remove them.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">fill_tips</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+<span class="n">sb</span><span class="o">.</span><span class="n">remove_tips</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">pattern</span><span class="o">=</span><span class="p">[[</span><span class="kc">True</span><span class="p">]</span><span class="o">*</span><span class="mi">6</span> <span class="o">+</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span><span class="o">*</span><span class="mi">6</span><span class="p">]</span><span class="o">*</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">place_tips</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">pattern</span><span class="o">=</span><span class="p">[[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span><span class="o">*</span><span class="mi">6</span><span class="p">]</span><span class="o">*</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">place_tips</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">pattern</span><span class="o">=</span><span class="p">[[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="liquids">
+<h3>Liquids<a class="headerlink" href="#liquids" title="Permalink to this headline">#</a></h3>
+<p>Adding liquid to wells works similarly. You can use <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.backends.simulation.SimulationBackend.adjust_well_volume.html#pyhamilton.liquid_handling.backends.simulation.SimulationBackend.adjust_well_volume" title="pyhamilton.liquid_handling.backends.simulation.SimulationBackend.adjust_well_volume"><code class="xref py py-func docutils literal notranslate"><span class="pre">adjust_well_volume()</span></code></a> to adjust the volume of individual wells in each resource. Note that the opacity of the well matches the volume of the well.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">adjust_well_volume</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">pattern</span><span class="o">=</span><span class="p">[[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">800</span><span class="p">]</span><span class="o">*</span><span class="mi">6</span><span class="p">]</span><span class="o">*</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">adjust_well_volume</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">pattern</span><span class="o">=</span><span class="p">[[</span><span class="mi">1000</span><span class="p">]</span><span class="o">*</span><span class="mi">12</span><span class="p">]</span><span class="o">*</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">adjust_well_volume</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">pattern</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">12</span><span class="p">]</span><span class="o">*</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><img alt="Simulator after the tips have been placed and the volumes adjusted" src="_images/resources.png" /></p>
+</section>
+</section>
+<section id="liquid-handling">
+<h2>Liquid handling<a class="headerlink" href="#liquid-handling" title="Permalink to this headline">#</a></h2>
+<p>Once the layout is complete, you can run the same commands as described in the <a class="reference internal" href="basic.html"><span class="doc std std-doc">basic liquid handling tutorial</span></a>.</p>
+<section id="picking-up-tips">
+<h3>Picking up tips<a class="headerlink" href="#picking-up-tips" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">pickup_tips</span><span class="p">(</span><span class="s1">&#39;tip_0&#39;</span><span class="p">,</span> <span class="s2">&quot;A1&quot;</span><span class="p">,</span> <span class="s2">&quot;B2&quot;</span><span class="p">,</span> <span class="s2">&quot;C3&quot;</span><span class="p">,</span> <span class="s2">&quot;D4&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">discard_tips</span><span class="p">(</span><span class="s1">&#39;tip_0&#39;</span><span class="p">,</span> <span class="s2">&quot;A1&quot;</span><span class="p">,</span> <span class="s2">&quot;B2&quot;</span><span class="p">,</span> <span class="s2">&quot;C3&quot;</span><span class="p">,</span> <span class="s2">&quot;D4&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="aspirating-and-dispensing">
+<h3>Aspirating and dispensing<a class="headerlink" href="#aspirating-and-dispensing" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">pickup_tips</span><span class="p">(</span><span class="s1">&#39;tip_0&#39;</span><span class="p">,</span> <span class="s2">&quot;A1&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">aspirate</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">(</span><span class="s2">&quot;A2&quot;</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">dispense</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="p">(</span><span class="s2">&quot;A2&quot;</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">discard_tips</span><span class="p">(</span><span class="s1">&#39;tip_0&#39;</span><span class="p">,</span> <span class="s2">&quot;A1&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="aspirating-using-core-96">
+<h3>Aspirating using CoRe 96<a class="headerlink" href="#aspirating-using-core-96" title="Permalink to this headline">#</a></h3>
+<p>The CoRe 96 head supports liquid handling operations for 96 channels at once. Here’s how to use:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.pickup_tips96.html#pyhamilton.liquid_handling.LiquidHandler.pickup_tips96" title="pyhamilton.liquid_handling.LiquidHandler.pickup_tips96"><code class="xref py py-func docutils literal notranslate"><span class="pre">pickup_tips96()</span></code></a> for picking up 96 tips;</p></li>
+<li><p><a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.aspirate96.html#pyhamilton.liquid_handling.LiquidHandler.aspirate96" title="pyhamilton.liquid_handling.LiquidHandler.aspirate96"><code class="xref py py-func docutils literal notranslate"><span class="pre">aspirate96()</span></code></a> for aspirating liquid from the deck, where the <code class="docutils literal notranslate"><span class="pre">pattern</span></code> array controls which wells are aspirated from;</p></li>
+<li><p><a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.dispense96.html#pyhamilton.liquid_handling.LiquidHandler.dispense96" title="pyhamilton.liquid_handling.LiquidHandler.dispense96"><code class="xref py py-func docutils literal notranslate"><span class="pre">dispense96()</span></code></a> for dispensing liquid to the deck, where the <code class="docutils literal notranslate"><span class="pre">pattern</span></code> array controls which wells are dispensed to, and;</p></li>
+<li><p><a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.discard_tips96.html#pyhamilton.liquid_handling.LiquidHandler.discard_tips96" title="pyhamilton.liquid_handling.LiquidHandler.discard_tips96"><code class="xref py py-func docutils literal notranslate"><span class="pre">discard_tips96()</span></code></a> for discarding tips to the resource.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">pickup_tips96</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">aspirate96</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[[</span><span class="kc">True</span><span class="p">]</span> <span class="o">*</span> <span class="mi">12</span><span class="p">]</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="n">volume</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">dispense96</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[[</span><span class="kc">True</span><span class="p">]</span> <span class="o">*</span> <span class="mi">12</span><span class="p">]</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="n">volume</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">aspirate96</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;A1:H12&quot;</span><span class="p">,</span> <span class="n">volume</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">dispense96</span><span class="p">(</span><span class="n">plt_car</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;A1:H12&quot;</span><span class="p">,</span> <span class="n">volume</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">discard_tips96</span><span class="p">(</span><span class="n">tip_car</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><img alt="The simulator after the liquid handling operations completed" src="_images/after_lh.png" /></p>
+</section>
+</section>
+<section id="shutting-down">
+<h2>Shutting down<a class="headerlink" href="#shutting-down" title="Permalink to this headline">#</a></h2>
+<p>When you’re done, remember to shut down the simulator by calling <a class="reference internal" href="_autosummary/pyhamilton.liquid_handling.LiquidHandler.stop.html#pyhamilton.liquid_handling.LiquidHandler.stop" title="pyhamilton.liquid_handling.LiquidHandler.stop"><code class="xref py py-func docutils literal notranslate"><span class="pre">stop()</span></code></a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lh</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:websockets.server:server closing
+INFO:websockets.server:connection closed
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="basic.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Basic liquid handling</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyhamilton.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Public API: pyhamilton package</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The PyHamilton authors<br/>
+  
+      &copy; Copyright 2022, PyHamilton.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

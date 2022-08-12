@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.unassign\_resource
+============================================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.unassign_resource

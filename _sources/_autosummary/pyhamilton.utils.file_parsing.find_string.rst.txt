@@ -1,0 +1,6 @@
+pyhamilton.utils.file\_parsing.find\_string
+===========================================
+
+.. currentmodule:: pyhamilton.utils.file_parsing
+
+.. autofunction:: find_string

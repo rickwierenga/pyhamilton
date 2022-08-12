@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.simulation.SimulationBackend.stop
+======================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.simulation
+
+.. automethod:: SimulationBackend.stop

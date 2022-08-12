@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.load\_from\_lay\_file
+===============================================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.load_from_lay_file

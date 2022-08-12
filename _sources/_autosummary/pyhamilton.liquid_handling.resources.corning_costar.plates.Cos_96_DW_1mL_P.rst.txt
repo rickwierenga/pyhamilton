@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.corning\_costar.plates.Cos\_96\_DW\_1mL\_P
+================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.corning_costar.plates
+
+.. autoclass:: Cos_96_DW_1mL_P

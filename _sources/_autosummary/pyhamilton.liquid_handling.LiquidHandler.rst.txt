@@ -1,0 +1,44 @@
+﻿pyhamilton.liquid\_handling.LiquidHandler
+=========================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. autoclass:: LiquidHandler
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.LiquidHandler.__init__
+      ~pyhamilton.liquid_handling.LiquidHandler.aspirate
+      ~pyhamilton.liquid_handling.LiquidHandler.aspirate96
+      ~pyhamilton.liquid_handling.LiquidHandler.assign_resource
+      ~pyhamilton.liquid_handling.LiquidHandler.discard_tips
+      ~pyhamilton.liquid_handling.LiquidHandler.discard_tips96
+      ~pyhamilton.liquid_handling.LiquidHandler.dispense
+      ~pyhamilton.liquid_handling.LiquidHandler.dispense96
+      ~pyhamilton.liquid_handling.LiquidHandler.get_resource
+      ~pyhamilton.liquid_handling.LiquidHandler.load
+      ~pyhamilton.liquid_handling.LiquidHandler.load_from_json
+      ~pyhamilton.liquid_handling.LiquidHandler.load_from_lay_file
+      ~pyhamilton.liquid_handling.LiquidHandler.move_lid
+      ~pyhamilton.liquid_handling.LiquidHandler.move_plate
+      ~pyhamilton.liquid_handling.LiquidHandler.need_setup_finished
+      ~pyhamilton.liquid_handling.LiquidHandler.pickup_tips
+      ~pyhamilton.liquid_handling.LiquidHandler.pickup_tips96
+      ~pyhamilton.liquid_handling.LiquidHandler.resource_assigned_callback
+      ~pyhamilton.liquid_handling.LiquidHandler.resource_unassigned_callback
+      ~pyhamilton.liquid_handling.LiquidHandler.save
+      ~pyhamilton.liquid_handling.LiquidHandler.setup
+      ~pyhamilton.liquid_handling.LiquidHandler.stop
+      ~pyhamilton.liquid_handling.LiquidHandler.summary
+      ~pyhamilton.liquid_handling.LiquidHandler.unassign_resource
+   
+   

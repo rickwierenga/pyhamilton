@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.simulation.SimulationBackend.setup
+=======================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.simulation
+
+.. automethod:: SimulationBackend.setup

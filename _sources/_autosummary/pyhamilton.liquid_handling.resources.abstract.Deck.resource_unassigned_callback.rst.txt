@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Deck.resource\_unassigned\_callback
+==================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Deck.resource_unassigned_callback

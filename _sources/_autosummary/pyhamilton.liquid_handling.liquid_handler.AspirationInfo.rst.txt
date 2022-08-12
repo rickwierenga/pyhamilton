@@ -1,0 +1,25 @@
+﻿pyhamilton.liquid\_handling.liquid\_handler.AspirationInfo
+==========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.liquid_handler
+
+.. autoclass:: AspirationInfo
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.liquid_handler.AspirationInfo.__init__
+      ~pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_dict
+      ~pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_tuple
+      ~pyhamilton.liquid_handling.liquid_handler.AspirationInfo.get_corrected_volume
+      ~pyhamilton.liquid_handling.liquid_handler.AspirationInfo.serialize
+   
+   

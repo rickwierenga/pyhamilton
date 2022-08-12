@@ -1,0 +1,29 @@
+﻿pyhamilton.utils.list
+=====================
+
+.. currentmodule:: pyhamilton.utils
+
+.. automodule:: pyhamilton.utils.list
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      assert_shape
+   
+   
+
+   
+   
+   
+
+   
+   
+   

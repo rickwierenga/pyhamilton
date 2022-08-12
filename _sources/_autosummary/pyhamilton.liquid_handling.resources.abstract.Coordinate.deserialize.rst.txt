@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Coordinate.deserialize
+=====================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Coordinate.deserialize

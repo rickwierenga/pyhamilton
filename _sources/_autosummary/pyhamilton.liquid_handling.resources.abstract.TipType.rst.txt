@@ -1,0 +1,22 @@
+﻿pyhamilton.liquid\_handling.resources.abstract.TipType
+======================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. autoclass:: TipType
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.resources.abstract.TipType.__init__
+      ~pyhamilton.liquid_handling.resources.abstract.TipType.serialize
+   
+   

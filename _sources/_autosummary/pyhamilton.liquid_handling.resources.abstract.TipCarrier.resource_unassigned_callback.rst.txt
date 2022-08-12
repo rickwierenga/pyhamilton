@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.TipCarrier.resource\_unassigned\_callback
+========================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: TipCarrier.resource_unassigned_callback

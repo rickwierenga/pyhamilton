@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Lid.get\_size\_x
+===============================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Lid.get_size_x

@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.simulation.SimulationBackend.remove\_tips
+==============================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.simulation
+
+.. automethod:: SimulationBackend.remove_tips

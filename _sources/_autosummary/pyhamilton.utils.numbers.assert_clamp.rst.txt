@@ -1,0 +1,6 @@
+pyhamilton.utils.numbers.assert\_clamp
+======================================
+
+.. currentmodule:: pyhamilton.utils.numbers
+
+.. autofunction:: assert_clamp

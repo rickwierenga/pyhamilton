@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Plate.resource\_unassigned\_callback
+===================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Plate.resource_unassigned_callback

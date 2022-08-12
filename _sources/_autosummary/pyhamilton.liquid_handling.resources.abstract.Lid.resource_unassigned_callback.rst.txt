@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Lid.resource\_unassigned\_callback
+=================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Lid.resource_unassigned_callback

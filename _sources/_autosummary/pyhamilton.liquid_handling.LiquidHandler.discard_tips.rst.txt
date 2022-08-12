@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.discard\_tips
+=======================================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.discard_tips

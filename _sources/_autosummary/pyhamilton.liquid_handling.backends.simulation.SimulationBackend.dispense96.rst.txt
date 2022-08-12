@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.backends.simulation.SimulationBackend.dispense96
+============================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends.simulation
+
+.. automethod:: SimulationBackend.dispense96

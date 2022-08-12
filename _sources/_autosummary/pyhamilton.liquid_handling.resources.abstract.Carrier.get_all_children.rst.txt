@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Carrier.get\_all\_children
+=========================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Carrier.get_all_children

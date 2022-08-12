@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Carrier.resource\_assigned\_callback
+===================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Carrier.resource_assigned_callback

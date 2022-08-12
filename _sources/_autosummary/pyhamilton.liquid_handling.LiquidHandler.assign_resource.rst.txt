@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.assign\_resource
+==========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.assign_resource

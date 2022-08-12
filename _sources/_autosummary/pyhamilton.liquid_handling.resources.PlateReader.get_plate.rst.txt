@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.PlateReader.get\_plate
+============================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. automethod:: PlateReader.get_plate

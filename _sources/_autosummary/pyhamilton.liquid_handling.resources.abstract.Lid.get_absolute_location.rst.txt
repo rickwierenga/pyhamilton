@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Lid.get\_absolute\_location
+==========================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Lid.get_absolute_location

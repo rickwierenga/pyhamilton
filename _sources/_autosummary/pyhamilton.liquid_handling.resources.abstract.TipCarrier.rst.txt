@@ -1,0 +1,35 @@
+﻿pyhamilton.liquid\_handling.resources.abstract.TipCarrier
+=========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. autoclass:: TipCarrier
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.__init__
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.assign_child_resource
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_absolute_location
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_all_children
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_resource
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_resources
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_sites
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_size_x
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_size_y
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.get_size_z
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.resource_assigned_callback
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.resource_unassigned_callback
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.serialize
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.unassign
+      ~pyhamilton.liquid_handling.resources.abstract.TipCarrier.unassign_child_resource
+   
+   

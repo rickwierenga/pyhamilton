@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Plate.get\_size\_z
+=================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Plate.get_size_z

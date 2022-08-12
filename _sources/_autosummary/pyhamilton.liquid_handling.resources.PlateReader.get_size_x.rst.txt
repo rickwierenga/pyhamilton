@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.PlateReader.get\_size\_x
+==============================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. automethod:: PlateReader.get_size_x

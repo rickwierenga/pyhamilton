@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.Hotel.get\_height
+=======================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. automethod:: Hotel.get_height

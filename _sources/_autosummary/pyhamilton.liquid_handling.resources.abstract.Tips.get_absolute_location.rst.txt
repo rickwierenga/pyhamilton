@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Tips.get\_absolute\_location
+===========================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Tips.get_absolute_location

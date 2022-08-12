@@ -1,0 +1,6 @@
+pyhamilton.utils.list.assert\_shape
+===================================
+
+.. currentmodule:: pyhamilton.utils.list
+
+.. autofunction:: assert_shape

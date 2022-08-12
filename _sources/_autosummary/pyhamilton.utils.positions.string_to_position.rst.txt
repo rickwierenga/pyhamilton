@@ -1,0 +1,6 @@
+pyhamilton.utils.positions.string\_to\_position
+===============================================
+
+.. currentmodule:: pyhamilton.utils.positions
+
+.. autofunction:: string_to_position

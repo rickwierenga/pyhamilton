@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Tips.get\_all\_children
+======================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Tips.get_all_children

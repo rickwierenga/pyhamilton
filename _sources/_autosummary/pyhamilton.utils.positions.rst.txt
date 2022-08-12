@@ -1,0 +1,30 @@
+﻿pyhamilton.utils.positions
+==========================
+
+.. currentmodule:: pyhamilton.utils
+
+.. automodule:: pyhamilton.utils.positions
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      string_to_pattern
+      string_to_position
+   
+   
+
+   
+   
+   
+
+   
+   
+   

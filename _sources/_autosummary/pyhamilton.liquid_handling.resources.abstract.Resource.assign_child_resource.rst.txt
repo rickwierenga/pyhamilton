@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Resource.assign\_child\_resource
+===============================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Resource.assign_child_resource

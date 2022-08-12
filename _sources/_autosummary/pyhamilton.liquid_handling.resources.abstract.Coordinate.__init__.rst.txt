@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Coordinate.\_\_init\_\_
+======================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Coordinate.__init__

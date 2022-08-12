@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.aspirate96
+====================================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.aspirate96

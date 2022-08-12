@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.TipCarrier.get\_resource
+=======================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: TipCarrier.get_resource

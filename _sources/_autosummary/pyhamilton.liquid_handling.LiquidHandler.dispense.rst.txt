@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.dispense
+==================================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.dispense

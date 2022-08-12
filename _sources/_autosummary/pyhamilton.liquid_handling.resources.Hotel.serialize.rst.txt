@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.Hotel.serialize
+=====================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources
+
+.. automethod:: Hotel.serialize

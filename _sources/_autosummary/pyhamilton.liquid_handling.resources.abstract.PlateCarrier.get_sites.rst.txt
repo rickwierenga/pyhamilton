@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.PlateCarrier.get\_sites
+======================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: PlateCarrier.get_sites

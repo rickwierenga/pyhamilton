@@ -1,0 +1,6 @@
+pyhamilton.utils.file\_parsing.find\_int
+========================================
+
+.. currentmodule:: pyhamilton.utils.file_parsing
+
+.. autofunction:: find_int

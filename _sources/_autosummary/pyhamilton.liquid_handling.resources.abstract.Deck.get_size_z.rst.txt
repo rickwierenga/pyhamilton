@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Deck.get\_size\_z
+================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Deck.get_size_z

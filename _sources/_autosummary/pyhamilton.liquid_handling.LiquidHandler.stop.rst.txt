@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.LiquidHandler.stop
+==============================================
+
+.. currentmodule:: pyhamilton.liquid_handling
+
+.. automethod:: LiquidHandler.stop

@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Deck.assign\_child\_resource
+===========================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Deck.assign_child_resource

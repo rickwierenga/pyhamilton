@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.ml\_star.tip\_types.high\_volume\_tip\_no\_filter
+=======================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.ml_star.tip_types
+
+.. autodata:: high_volume_tip_no_filter

@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.ml\_star.tips.HT\_L
+=========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.ml_star.tips
+
+.. autoclass:: HT_L

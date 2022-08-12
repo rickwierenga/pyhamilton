@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.ml\_star.tip\_carriers.TIP\_CAR\_72\_5mlT\_C00
+====================================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.ml_star.tip_carriers
+
+.. autoclass:: TIP_CAR_72_5mlT_C00

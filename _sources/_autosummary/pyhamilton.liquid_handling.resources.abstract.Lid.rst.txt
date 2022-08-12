@@ -1,0 +1,33 @@
+﻿pyhamilton.liquid\_handling.resources.abstract.Lid
+==================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. autoclass:: Lid
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.__init__
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.assign_child_resource
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.get_absolute_location
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.get_all_children
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.get_resource
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.get_size_x
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.get_size_y
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.get_size_z
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.resource_assigned_callback
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.resource_unassigned_callback
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.serialize
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.unassign
+      ~pyhamilton.liquid_handling.resources.abstract.Lid.unassign_child_resource
+   
+   

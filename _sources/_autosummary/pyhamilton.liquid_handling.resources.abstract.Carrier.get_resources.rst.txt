@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Carrier.get\_resources
+=====================================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Carrier.get_resources

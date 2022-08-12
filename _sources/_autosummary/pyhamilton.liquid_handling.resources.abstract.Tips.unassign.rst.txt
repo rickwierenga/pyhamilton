@@ -1,0 +1,6 @@
+pyhamilton.liquid\_handling.resources.abstract.Tips.unassign
+============================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.resources.abstract
+
+.. automethod:: Tips.unassign

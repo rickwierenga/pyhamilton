@@ -1,0 +1,35 @@
+﻿pyhamilton.liquid\_handling.backends.LiquidHandlerBackend
+=========================================================
+
+.. currentmodule:: pyhamilton.liquid_handling.backends
+
+.. autoclass:: LiquidHandlerBackend
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: .
+   
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.__init__
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.aspirate
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.aspirate96
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.assigned_resource_callback
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.discard_tips
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.discard_tips96
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.dispense
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.dispense96
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.move_lid
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.move_plate
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.pickup_tips
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.pickup_tips96
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.setup
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.stop
+      ~pyhamilton.liquid_handling.backends.LiquidHandlerBackend.unassigned_resource_callback
+   
+   

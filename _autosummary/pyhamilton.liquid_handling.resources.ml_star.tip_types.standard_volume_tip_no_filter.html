@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_no_filter &#8212; PyHamilton  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_with_filter" href="pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_with_filter.html" />
+    <link rel="prev" title="pyhamilton.liquid_handling.resources.ml_star.tip_types" href="pyhamilton.liquid_handling.resources.ml_star.tip_types.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">PyHamilton  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting Started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../development.html">
+   Developer Guide
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Liquid handling
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic.html">
+   Basic liquid handling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../using-the-simulator.html">
+   Using the simulator
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  API documentation
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../pyhamilton.html">
+   Public API: pyhamilton package
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../pyhamilton.liquid_handling.html">
+     pyhamilton.liquid_handling package
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.html">
+       pyhamilton.liquid_handling.LiquidHandler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.__init__.html">
+         pyhamilton.liquid_handling.LiquidHandler.__init__
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.aspirate.html">
+         pyhamilton.liquid_handling.LiquidHandler.aspirate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.aspirate96.html">
+         pyhamilton.liquid_handling.LiquidHandler.aspirate96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.assign_resource.html">
+         pyhamilton.liquid_handling.LiquidHandler.assign_resource
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.discard_tips.html">
+         pyhamilton.liquid_handling.LiquidHandler.discard_tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.discard_tips96.html">
+         pyhamilton.liquid_handling.LiquidHandler.discard_tips96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.dispense.html">
+         pyhamilton.liquid_handling.LiquidHandler.dispense
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.dispense96.html">
+         pyhamilton.liquid_handling.LiquidHandler.dispense96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.get_resource.html">
+         pyhamilton.liquid_handling.LiquidHandler.get_resource
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.load.html">
+         pyhamilton.liquid_handling.LiquidHandler.load
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.load_from_json.html">
+         pyhamilton.liquid_handling.LiquidHandler.load_from_json
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.load_from_lay_file.html">
+         pyhamilton.liquid_handling.LiquidHandler.load_from_lay_file
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.move_lid.html">
+         pyhamilton.liquid_handling.LiquidHandler.move_lid
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.move_plate.html">
+         pyhamilton.liquid_handling.LiquidHandler.move_plate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.need_setup_finished.html">
+         pyhamilton.liquid_handling.LiquidHandler.need_setup_finished
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.pickup_tips.html">
+         pyhamilton.liquid_handling.LiquidHandler.pickup_tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.pickup_tips96.html">
+         pyhamilton.liquid_handling.LiquidHandler.pickup_tips96
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.resource_assigned_callback.html">
+         pyhamilton.liquid_handling.LiquidHandler.resource_assigned_callback
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.resource_unassigned_callback.html">
+         pyhamilton.liquid_handling.LiquidHandler.resource_unassigned_callback
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.save.html">
+         pyhamilton.liquid_handling.LiquidHandler.save
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.setup.html">
+         pyhamilton.liquid_handling.LiquidHandler.setup
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.stop.html">
+         pyhamilton.liquid_handling.LiquidHandler.stop
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.summary.html">
+         pyhamilton.liquid_handling.LiquidHandler.summary
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.LiquidHandler.unassign_resource.html">
+         pyhamilton.liquid_handling.LiquidHandler.unassign_resource
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.AspirationInfo.html">
+       pyhamilton.liquid_handling.liquid_handler.AspirationInfo
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.AspirationInfo.__init__.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.__init__
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_dict.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_dict
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_tuple.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.from_tuple
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.AspirationInfo.get_corrected_volume.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.get_corrected_volume
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.AspirationInfo.serialize.html">
+         pyhamilton.liquid_handling.liquid_handler.AspirationInfo.serialize
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.DispenseInfo.html">
+       pyhamilton.liquid_handling.liquid_handler.DispenseInfo
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.DispenseInfo.__init__.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.__init__
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_dict.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_dict
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_tuple.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.from_tuple
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.DispenseInfo.get_corrected_volume.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.get_corrected_volume
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.liquid_handler.DispenseInfo.serialize.html">
+         pyhamilton.liquid_handling.liquid_handler.DispenseInfo.serialize
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../pyhamilton.liquid_handling.backends.html">
+       pyhamilton.liquid_handling.backends package
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.backends.LiquidHandlerBackend.html">
+         pyhamilton.liquid_handling.backends.LiquidHandlerBackend
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.backends.hamilton.STAR.html">
+         pyhamilton.liquid_handling.backends.hamilton.STAR
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.backends.simulation.SimulationBackend.html">
+         pyhamilton.liquid_handling.backends.simulation.SimulationBackend
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="../pyhamilton.liquid_handling.resources.html">
+       pyhamilton.liquid_handling.resources package
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.html">
+         pyhamilton.liquid_handling.resources.abstract
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.Coordinate.html">
+         pyhamilton.liquid_handling.resources.abstract.Coordinate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.Deck.html">
+         pyhamilton.liquid_handling.resources.abstract.Deck
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.Lid.html">
+         pyhamilton.liquid_handling.resources.abstract.Lid
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.Resource.html">
+         pyhamilton.liquid_handling.resources.abstract.Resource
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.Tips.html">
+         pyhamilton.liquid_handling.resources.abstract.Tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.TipType.html">
+         pyhamilton.liquid_handling.resources.abstract.TipType
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.Plate.html">
+         pyhamilton.liquid_handling.resources.abstract.Plate
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.Carrier.html">
+         pyhamilton.liquid_handling.resources.abstract.Carrier
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.TipCarrier.html">
+         pyhamilton.liquid_handling.resources.abstract.TipCarrier
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.abstract.PlateCarrier.html">
+         pyhamilton.liquid_handling.resources.abstract.PlateCarrier
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.Hotel.html">
+         pyhamilton.liquid_handling.resources.Hotel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.PlateReader.html">
+         pyhamilton.liquid_handling.resources.PlateReader
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.ml_star.html">
+         pyhamilton.liquid_handling.resources.ml_star
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.ml_star.tip_types.html">
+         pyhamilton.liquid_handling.resources.ml_star.tip_types
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.ml_star.tips.html">
+         pyhamilton.liquid_handling.resources.ml_star.tips
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.ml_star.tip_carriers.html">
+         pyhamilton.liquid_handling.resources.ml_star.tip_carriers
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.ml_star.plate_carriers.html">
+         pyhamilton.liquid_handling.resources.ml_star.plate_carriers
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.liquid_handling.resources.corning_costar.plates.html">
+         pyhamilton.liquid_handling.resources.corning_costar.plates
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../pyhamilton.liquid_handling.liquid_classes.html">
+       pyhamilton.liquid_handling.liquid_classes package
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../pyhamilton.utils.html">
+     pyhamilton.utils package
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.utils.file_parsing.html">
+       pyhamilton.utils.file_parsing
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.file_parsing.find_float.html">
+         pyhamilton.utils.file_parsing.find_float
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.file_parsing.find_int.html">
+         pyhamilton.utils.file_parsing.find_int
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.file_parsing.find_string.html">
+         pyhamilton.utils.file_parsing.find_string
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.utils.list.html">
+       pyhamilton.utils.list
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.list.assert_shape.html">
+         pyhamilton.utils.list.assert_shape
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.utils.numbers.html">
+       pyhamilton.utils.numbers
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+      <label for="toctree-checkbox-11">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.numbers.assert_clamp.html">
+         pyhamilton.utils.numbers.assert_clamp
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.utils.positions.html">
+       pyhamilton.utils.positions
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+      <label for="toctree-checkbox-12">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.positions.string_to_pattern.html">
+         pyhamilton.utils.positions.string_to_pattern
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.positions.string_to_position.html">
+         pyhamilton.utils.positions.string_to_position
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="pyhamilton.utils.string.html">
+       pyhamilton.utils.string
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="pyhamilton.utils.string.pad_string.html">
+         pyhamilton.utils.string.pad_string
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyhamilton/pyhamilton/edit/usb/docs/_autosummary/pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_no_filter.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/_autosummary/pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_no_filter.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_no_filter</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="pyhamilton-liquid-handling-resources-ml-star-tip-types-standard-volume-tip-no-filter">
+<h1>pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_no_filter<a class="headerlink" href="#pyhamilton-liquid-handling-resources-ml-star-tip-types-standard-volume-tip-no-filter" title="Permalink to this headline">#</a></h1>
+<dl class="py data">
+<dt class="sig sig-object py" id="pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_no_filter">
+<span class="sig-prename descclassname"><span class="pre">pyhamilton.liquid_handling.resources.ml_star.tip_types.</span></span><span class="sig-name descname"><span class="pre">standard_volume_tip_no_filter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">TipType(has_filter=False,</span> <span class="pre">total_tip_length=59.9,</span> <span class="pre">maximal_volume=400,</span> <span class="pre">tip_type_id=2,</span> <span class="pre">pick_up_method=0)</span></em><a class="headerlink" href="#pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_no_filter" title="Permalink to this definition">#</a></dt>
+<dd><p>Standard volume tip without a filter (<code class="code docutils literal notranslate"><span class="pre">tt00</span></code> in venus)</p>
+</dd></dl>
+
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="pyhamilton.liquid_handling.resources.ml_star.tip_types.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyhamilton.liquid_handling.resources.ml_star.tip_types</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_with_filter.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyhamilton.liquid_handling.resources.ml_star.tip_types.standard_volume_tip_with_filter</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The PyHamilton authors<br/>
+  
+      &copy; Copyright 2022, PyHamilton.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
